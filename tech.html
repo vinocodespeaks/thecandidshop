@@ -1,0 +1,393 @@
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Thunderbolt</title>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Sunflower:300" rel="stylesheet">
+
+    <style>
+        .icons-container {
+            line-height: 2;
+        }
+
+        .icons-container>span {
+            white-space: nowrap;
+        }
+
+        .material-icons {
+            vertical-align: middle;
+        }
+
+        .brand-logo {
+            font-family: 'Amatic SC', sans-serif;
+        }
+
+        .tech-logo {
+            font-family: 'Sunflower', monospace;
+            font-size: x-large;
+        }
+
+        nav {
+            padding-left: 32px;
+            padding-right: 32px
+        }
+
+        a,
+        h5,
+        h6 {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .parallax-container {
+            height: 24px;
+        }
+
+        .parallax-container {
+            min-height: 360px;
+            line-height: 0;
+            height: auto;
+            color: rgba(255, 255, 255, .9);
+        }
+
+        .parallax-container .section {
+            width: 100%;
+        }
+
+        @media only screen and (max-width: 992px) {
+            .parallax-container .section {
+                position: absolute;
+                top: 20%;
+            }
+            #index-banner .section {
+                top: 10%;
+            }
+        }
+
+
+        @media only screen and (max-width: 600px) {
+            #index-banner .section {
+                top: 0;
+            }
+        }
+
+        .icon-block {
+            padding: 0 15px;
+        }
+
+        .icon-block .material-icons {
+            font-size: inherit;
+        }
+
+        .carousel .carousel-item {
+            width: 360px;
+            height: 270px;
+            max-width: 80vw;
+            box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3);
+        }
+
+        .card-panel {
+            box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3);
+        }
+
+        .carousel {
+            margin-top: -86px;
+            margin-bottom: -80px;
+            position: relative;
+            top: -24px;
+        }
+
+        .action-bar {
+            height: 64px;
+            width: 100%;
+            display: table;
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+        }
+
+        .action-bar-title {
+            margin: 0px;
+            display: table-cell;
+            vertical-align: middle;
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+
+        .card {
+            border-radius: 6px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="navbar-fixed">
+
+        <nav class="white">
+            <div class="nav-wrapper">
+                <a href="home.html" class="brand-logo black-text">Thunderbolt Shop</a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse black-text"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="category.html" class="black-text">Art &amp; Craft</a></li>
+                    <li><a href="tech.html" class="black-text">Software Works</a></li>                    
+                    <li><a href="contact.html" class="black-text">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </div>
+
+
+    <ul class="side-nav" id="mobile-demo">
+        <img src="preview.jpg" width="300px" style="margin-bottom:24px">
+        <center><h6>Art by Sujitha A</h6></center><br>
+        <li><a href="category.html" class="black-text">Art &amp; Craft</a></li>
+        <li><a href="tech.html" class="black-text">Software Works</a></li>                    
+        <li><a href="contact.html" class="black-text">Contact Us</a></li>
+    </ul>
+
+    <center>
+        <h5 style="margin:24px; margin-top:36px; color:rgba(0, 0, 0, 0.8)">Well actually, there's a lot we can do...</h5>
+
+        <div class="row">
+            <div class="col l6 offset-l3 m10 offset-m1 s12">
+                <h6>We are more of 'Developers' and not just 'Code Writers'. We deal with a lot of technologies, really lot.
+                    Whatever you want us to do, we'll find a way to do it as efficiently as possible!</h6><br>
+                <div class="card-panel icons-container">
+                    <span><i class="material-icons red-text">web_asset</i>&nbsp;Web App&ensp;</span>
+                    <span><i class="material-icons blue-text">desktop_windows</i>&nbsp;Desktop&ensp;</span>
+                    <span><i class="material-icons green-text">phone_android</i>&nbsp;Native&ensp;</span>
+                    <span><i class="material-icons orange-text">build</i>&nbsp;Automation&ensp;</span>
+                    <span><i class="material-icons teal-text">memory</i>&nbsp;IoT&ensp;</span>
+                    <span><i class="material-icons pink-text">phonelink</i>&nbsp;Web Design&ensp;</span>
+                </div>
+            </div>
+        </div>
+
+        <h5 style="margin:24px; margin-top:36px; color:rgba(0, 0, 0, 0.8)">Some of our completed projects</h5>
+        <div class="row">
+            <div class="col l6 offset-l3 m10 offset-m1 s12">
+                <h6>Why dont you check out the top projects we've built so far! All these are available for sale on licence basis.</h6>
+            </div>
+        </div>
+    </center>
+
+    <div class="carousel products">
+        <div class="carousel-item card z-depth-5 teal lighten-5" href="#one!">
+            <div class="action-bar teal white-text">
+                <h6 class="action-bar-title" style="font-size:large">Candid 2.0 &amp; 3.0</h6>
+            </div>
+            <div style="padding:18px;">
+                <h6>IoT, ML | Demo Project</h6><br>
+                <i>Aurduino based project of monitoring the patient health condition and remote access of medical instruments by doctor. Uses
+                    ML to detect anomalies. <a href="https://youtu.be/l4DcOMdonqg">Video&nbsp;<i class="material-icons">open_in_new</i></a>
+                </i>
+            </div>
+        </div>
+        <div class="carousel-item card z-depth-5 blue lighten-5" href="#two!">
+            <div class="action-bar blue white-text">
+                <h6 class="action-bar-title" style="font-size:large">
+                    Attendance Tracker
+                    <span class="new badge" data-badge-caption="FOR SALE"></span>
+                </h6>
+            </div>
+            <div style="padding:18px;">
+                <h6>Web App | Real Time application </h6><br>
+                <i>In an institution, allows staff to log in, mark the attendance for any day, and allows the admin to view overall results. Serverless.
+                    Firebase for database.</i>
+            </div>
+        </div>
+        <div class="carousel-item card z-depth-5 red lighten-5" href="#three!">
+            <div class="action-bar red white-text">
+                <h6 class="action-bar-title" style="font-size:large">
+                    CrimeAnalytics
+                    <span class="new badge" data-badge-caption="FOR SALE"></span>
+                </h6>
+            </div>
+            <div style="padding:18px;">
+                <h6>Machine Learning | Demo Project </h6><br>
+                <i>Simple machine learning project using Regression,
+                    to to predict number of crimes that will happen in future based on past data,
+                    classified into types of crime and location</i>
+            </div>
+        </div>
+        <div class="carousel-item card z-depth-5 deep-purple lighten-5" href="#four!">
+            <div class="action-bar deep-purple white-text">
+                <h6 class="action-bar-title" style="font-size:large">
+                    Under construction...
+                    <span class="new badge" data-badge-caption="OUT SOON"></span>
+                </h6>
+            </div>
+            <div style="padding:18px;">
+                <ul>
+                    <li><b>Crimax: </b>Criminal face detection and alert using Computer Vision. Demo Project.</li>
+                    <li><b>Mapped: </b>Social Media data mining for disaster recovery management. Demo Project.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="carousel-item card z-depth-5 pink lighten-5" href="#five!">
+            <div class="action-bar pink white-text">
+                <h6 class="action-bar-title" style="font-size:large">Internet Bytes Browser</h6>
+            </div>
+            <div style="padding:18px;">
+                <h6>Android App | End User Product </h6><br>
+                <i>The most customizable browser with a ton of color options and layout configurations. Active now in the Play Store.
+                    <a href="https://play.google.com/store/apps/details?id=yottabyte.internetbytes">Live&nbsp;<i class="material-icons">open_in_new</i></a>
+                </i>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <center>
+        <h5 style="margin:24px; margin-top:36px; color:rgba(0, 0, 0, 0.8)">These are our core domains</h5>
+
+    </center>
+    <div class="row">
+        <div class="col l6 offset-l3 m10 offset-m1 s12">
+            <ul class="collapsible" data-collapsible="accordion">
+                <li>
+                    <div class="collapsible-header active"><i class="material-icons pink-text">web_asset</i>Software Developement</div>
+                    <div class="collapsible-body"><span>Scalable, responsive and efficient real time web apps and desktop apps. We can do both server side and client only apps.
+                            We build for a wide vairety of platforms and familiar with a lot of tools.</span></div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons cyan-text">bubble_chart</i>Demo Projects</div>
+                    <div class="collapsible-body"><span>Have an idea in your mind and want to implement it in real life, maybe for a contest? We'll give you an helping hand.
+                            We deal with latest tech like ML, IoT, Big Data, etc</span></div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons light-green-text">settings</i>Automation Scripting</div>
+                    <div class="collapsible-body"><span>Who doesn't like automation? We are no exception. Maybe you are stuck doing the same Excel Sheet, or the same job repeatedly,
+                            we can automate it for you using the best toolchain and practices.</span></div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons orange-text">brush</i>Web &amp; Graphic Designing</div>
+                    <div class="collapsible-body"><span>This page is a standing exaple for our design job! We make professional looking websites and graphic elements like, logos, banners,
+                        etc</span></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <center>
+        <h5 style="margin:24px; margin-top:36px; color:rgba(0, 0, 0, 0.8)">Let's get in touch!</h5>
+
+        <span>Leave us a message and we'll contact you,<br>or you can get to us directly. <a href="#">Contact us</a></span>
+    </center>
+
+
+    <div>
+        <div class="row">
+            <div class="row center col l8 offset-l2 m12 s12" style="padding:12px;">
+                <div class="input-field col m6 offset-m3 s12">
+                    <input id="first_name" type="text" class="validate">
+                    <label for="first_name">Name</label>
+                </div>
+                <div class="input-field col m6 offset-m3 s12">
+                    <input placeholder="Email/Phone" id="contact" type="text" class="validate">
+                    <label for="contact">Contact</label>
+                </div>
+                <div class="input-field col m6 offset-m3 s12">
+                    <textarea id="message" class="materialize-textarea" rows=3></textarea>
+                    <label for="message">Leave us a message</label>
+                </div>
+                <div class="col s12 center">
+                    <h6>How would you like us to contact you?</h6>
+                    <span>
+                        <input name="group1" class="with-gap blue-text" type="radio" id="email" />
+                        <label for="email">E-mail</label>
+                    </span>
+                    <span>
+                        <input name="group1" class="with-gap" type="radio" id="call" checked />
+                        <label for="call">Call</label>
+                    </span>
+                    <span>
+                        <input name="group1" class="with-gap" type="radio" id="whatsapp" />
+                        <label for="whatsapp">Whatsapp</label>
+                    </span>
+                </div>
+                <div class="col s12 center" style="margin-top:24px;">
+                    <a onclick="submit();" class="waves-effect blue btn-large waves-light btn"><i class="material-icons right">send</i>submit</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="page-footer blue">
+        <div class="container" style="padding-bottom:16px;">
+            From the team of <a class="white-text text-lighten-3" href="contact.html">CANDiD</a>
+        </div>
+    </footer>
+
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyBDCr-B3A8USVuwsEQ1zMrdIfsrmMXQzEg",
+        authDomain: "thunderbolt-shop.firebaseapp.com",
+        databaseURL: "https://thunderbolt-shop.firebaseio.com",
+        projectId: "thunderbolt-shop",
+        storageBucket: "thunderbolt-shop.appspot.com",
+        messagingSenderId: "292348819143"
+    };
+    firebase.initializeApp(config);
+
+</script>
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+<script>
+    $(".button-collapse").sideNav();
+
+    $(document).ready(function () {
+        $('.carousel').carousel({ padding: 24 });
+    });
+
+    function submit() {
+        var first_name = $("#first_name").val().trim();
+        var contact = $("#contact").val().trim();
+
+        if (!(first_name && contact)) {
+            Materialize.toast('You haven\'t provided sufficient contact information...', 2000, 'rounded');
+            return;
+        }
+        
+        var finalObject = {
+            name: first_name,
+            contact: contact,
+            message: $("#message").val(),
+            contact_medium: ($("#email").is(":checked") ? "email" : ($("#call").is(":checked") ? "call" : "whatsapp")),
+        };
+
+        firebase.database().ref("tech/").push(finalObject).then(
+            function(){
+                Materialize.toast('Message sent successfully!', 2000, 'rounded');
+            }
+        ).catch(
+            function(){
+                Materialize.toast('Unable to send message, try again', 2000, 'rounded');
+            }
+        )
+    }
+
+</script>
+
+</html>

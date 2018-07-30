@@ -1,0 +1,881 @@
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Thunderbolt</title>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <style>
+        .brand-logo {
+            font-family: 'Amatic SC', sans-serif;
+        }
+
+        nav {
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+
+        a,
+        h5,
+        h6,
+        h4,
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .products .products>.carousel-item {
+            width: 240px !important;
+        }
+
+        .products {
+            margin-top: -86px;
+            margin-bottom: -80px;
+        }
+
+        .stages {
+            box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3);
+        }
+
+        .material-icons {
+            vertical-align: middle;
+        }
+
+        .stages-container {
+            padding-left: 24px !important;
+            padding-right: 24px !important;
+        }
+
+        textarea {
+            height: 124px !important;
+            resize: none !important;
+            line-height: 2.4;
+            /* Remove this if you want the user to resize the textarea */
+        }
+
+        .collapsible {
+            margin: 24px;
+            height: 200px;
+            overflow: auto;
+        }
+
+        .collapsible-body {
+            padding: 12px;
+        }
+
+        .dot {
+            height: 3px;
+            width: 18px;
+            margin: 0 2px;
+            background-color: #dddddd;
+            border-radius: 0;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .dotactive:nth-child(1) {
+            background-color: #2196f3;
+        }
+
+        .dotactive:nth-child(2) {
+            background-color: #fb8c00;
+        }
+
+        .dotactive:nth-child(3) {
+            background-color: #4caf50;
+        }
+
+        .dotactive:nth-child(4) {
+            background-color: #e91e63;
+        }
+
+        .dotactive:nth-child(5) {
+            background-color: #9c27b0;
+        }
+
+        .dotactive:nth-child(6) {
+            background-color: #00bcd4;
+        }
+
+        .card {
+            border-radius: 4px;
+        }
+
+        .materialboxed {
+            border-top-left-radius: 4px !important;
+            border-top-right-radius: 4px !important;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="navbar-fixed">
+
+        <nav class="white">
+            <div class="nav-wrapper">
+                <a href="home.html" class="brand-logo black-text">Thunderbolt Shop</a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse black-text"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="category.html" class="black-text">Art &amp; Craft</a></li>
+                    <li><a href="tech.html" class="black-text">Software Works</a></li>
+                    <li><a href="contact.html" class="black-text">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </div>
+
+
+    <ul class="side-nav" id="mobile-demo">
+        <img src="preview.jpg" width="300px" style="margin-bottom:24px">
+        <center>
+            <h6>Art by Sujitha A</h6>
+        </center><br>
+        <li><a href="category.html" class="black-text">Art &amp; Craft</a></li>
+        <li><a href="tech.html" class="black-text">Software Works</a></li>
+        <li><a href="contact.html" class="black-text">Contact Us</a></li>
+    </ul>
+
+    <center>
+        <h5 style="margin:24px; margin-top:36px; color:rgba(0, 0, 0, 0.8)">Things we can do...</h5>
+    </center>
+
+    <div class="carousel products">
+        <a class="carousel-item" href="#two!">
+            <img src="gift.png">
+            <center class="black-text">Birthday Gifts</center>
+        </a>
+        <a class="carousel-item" href="#three!">
+            <img src="photo.png">
+            <center class="black-text">Posters, cards</center>
+        </a>
+        <a class="carousel-item" href="#four!">
+            <img src="cal.png">
+            <center class="black-text">Calendars</center>
+        </a>
+        <a class="carousel-item" href="#five!">
+            <img src="gall.png">
+            <center class="black-text">Framed Photos</center>
+        </a>
+        <a class="carousel-item" href="#one!">
+            <img src="tee.png">
+            <center class="black-text">Printed Tees</center>
+        </a>
+    </div>
+
+    <br>
+
+    <center>
+        <span><h5 style="margin:24px; margin-top:36px; color:rgba(0, 0, 0, 0.8)">Let's get your order placed!</h5></span>
+        <span>
+            <h6>
+                <b>Important: </b> Service available only within Chennai
+            </h6>
+        </span>
+
+        <br>
+
+    </center>
+
+    <div class="row">
+
+        <div class="stages-container col l8 offset-l2 m10 offset-m1 s12">
+
+            <form class="carousel stages z-depth-3 carousel-slider center">
+
+                <div class="carousel-fixed-item center">
+                    <div>
+                        <a id="prevbtn" onclick="prev();" class="disabled btn-flat waves-effect">
+                            <i class="material-icons">keyboard_arrow_left</i>
+                            <span style="vertical-align:middle;">prev</span>
+                        </a>
+                        <a id="nextbtn" onclick="next();" class="btn-flat waves-effect">
+                            <span id="nexttxt" style="vertical-align:middle;">next</span>
+                            <i class="material-icons">keyboard_arrow_right</i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="carousel-item" style="padding:2px;">
+                    <h2>Provide your assets</h2>
+                    <div class="row" style="position:relative;top:16%">
+                        <div class="col l8 offset-l2 col m10 offset-m1 s10 offset-s1 file-field input-field">
+                            <div class="btn blue">
+                                <span>Image</span>
+                                <input id="image" type="file" accept="image/*">
+                            </div>
+                            <div class="file-path-wrapper">
+                                <input class="file-path validate" type="text">
+                            </div>
+                            <h6>Share with us an image (optional)</h6>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="carousel-item" >
+                    <h2>Share your ideas</h2>
+                    <h6 style="margin-left:12px;margin-right:12px;">Explain what we should do with as much details as possible. Or indicate if you want us to get creative.</h6>
+                    <div class="row" style="margin-top:24px;">
+                        <div class="input-field col l10 offset-l1 col m10 offset-m1 s10 offset-s1">
+                            <textarea id="ideas" class="materialize-textarea" rows=3></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <h2>Choose all that you want</h2>
+                    <h6>We'll show you our work before proceeding</h6>
+                    <div class="row">
+
+                        <ul class="collapsible z-depth-0  l8 offset-l2 col m10 offset-m1 s10 offset-s1" data-collapsible="expandable">
+                            <li id="li-poster">
+                                <div class="collapsible-header">
+                                    <div style="width:100%">
+                                        <div style="float:left;">
+                                            <i class="material-icons blue-text">check_box_outline_blank</i> Posters
+                                        </div>
+                                        <div style="float:right;">Rs. 50</div>
+                                        <div style="clear:both;"></div>
+                                    </div>
+                                </div>
+                                <div class="collapsible-body row">
+                                    <div class="input-field col s9">
+                                        <input placeholder="Size, color, any text, etc" id="poster" type="text">
+                                        <label for="poster">Description</label>
+                                    </div>
+                                    <div class="input-field col s3">
+                                        <input value="1" id="posterq" type="text">
+                                        <label for="posterq">Qty</label>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li id="li-framed">
+                                <div class="collapsible-header">
+                                    <div style="width:100%">
+                                        <div style="float:left;">
+                                            <i class="material-icons orange-text">check_box_outline_blank</i>Framed
+                                        </div>
+                                        <div style="float:right;">Rs. 150</div>
+                                        <div style="clear:both;"></div>
+                                    </div>
+                                </div>
+                                <div class="collapsible-body row">
+                                    <div class="input-field col s12">
+                                        <input placeholder="Size, color, any text, etc" id="framed" type="text">
+                                        <label for="framed">Description</label>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li id="li-greeting">
+                                <div class="collapsible-header">
+                                    <div style="width:100%">
+                                        <div style="float:left;">
+                                            <i class="material-icons pink-text">check_box_outline_blank</i>Greeting Card
+                                        </div>
+                                        <div style="float:right;">Rs. 50</div>
+                                        <div style="clear:both;"></div>
+                                    </div>
+                                </div>
+                                <div class="collapsible-body row">
+                                    <div class="input-field col s12">
+                                        <input placeholder="Happy Birthday!" id="greeting" type="text">
+                                        <label for="greeting">Greeting/Wish</label>
+                                    </div>
+                                    <div class="input-field col s9">
+                                        <input placeholder="You name it!" id="greetingc" type="text">
+                                        <label for="greetingc">Color</label>
+                                    </div>
+                                    <div class="input-field col s3">
+                                        <input value="1" id="greetingq" type="text">
+                                        <label for="greetingq">Qty</label>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li id="li-calendar">
+                                <div class="collapsible-header">
+                                    <div style="width:100%">
+                                        <div style="float:left;">
+                                            <i class="material-icons indigo-text">check_box_outline_blank</i>Calendar
+                                        </div>
+                                        <div style="float:right;">Rs. 100</div>
+                                        <div style="clear:both;"></div>
+                                    </div>
+                                </div>
+                                <div class="collapsible-body row">
+                                    <div class="input-field col s12">
+                                        <input placeholder="Describe how you want it" id="calendar" type="text">
+                                        <label for="calendar">Description</label>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li id="li-tee">
+                                <div class="collapsible-header">
+                                    <div style="width:100%">
+                                        <div style="float:left;">
+                                            <i class="material-icons teal-text">check_box_outline_blank</i>T-Shirt
+                                        </div>
+                                        <div style="float:right;">Rs. 200</div>
+                                        <div style="clear:both;"></div>
+                                    </div>
+                                </div>
+                                <div class="collapsible-body row">
+                                    <div class="input-field col s12">
+                                        <input placeholder="Size, color &amp; type" id="tee" type="text">
+                                        <label for="tee">Let's get it customised!</label>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li id="li-mug">
+                                <div class="collapsible-header">
+                                    <div style="width:100%">
+                                        <div style="float:left;">
+                                            <i class="material-icons deep-orange-text">check_box_outline_blank</i>Mug
+                                        </div>
+                                        <div style="float:right;">Rs. 200</div>
+                                        <div style="clear:both;"></div>
+                                    </div>
+                                </div>
+                                <div class="collapsible-body row">
+                                    <div class="input-field col s12">
+                                        <input placeholder="You name it!" id="mug" type="text">
+                                        <label for="mug">Color</label>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li id="li-case">
+                                <div class="collapsible-header">
+                                    <div style="width:100%">
+                                        <div style="float:left;">
+                                            <i class="material-icons cyan-text">check_box_outline_blank</i>Phone Case (Experimental)
+                                        </div>
+                                        <div style="float:right;">Rs. 250</div>
+                                        <div style="clear:both;"></div>
+                                    </div>
+                                </div>
+                                <div class="collapsible-body row">
+                                    <div class="input-field col s12">
+                                        <input placeholder="Phone Model" id="case" type="text">
+                                        <label for="case">Let's get a nice fit</label>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li id="li-custom">
+                                <div class="collapsible-header">
+                                    <div style="width:100%">
+                                        <div style="float:left;">
+                                            <i class="material-icons orange-text">check_box_outline_blank</i>Custom Item!
+                                        </div>
+                                        <div style="clear:both;"></div>
+                                    </div>
+                                </div>
+                                <div class="collapsible-body row">
+                                    <div class="input-field col s12">
+                                        <input placeholder="Hit us up!" id="custom" type="text">
+                                        <label for="custom">Description</label>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <h2>For a special occasion?</h2>
+                    <ul class="collapsible z-depth-0  l8 offset-l2 col m10 offset-m1 s10 offset-s1" data-collapsible="expandable">
+                        <li id="li-deadline">
+                            <div class="collapsible-header">
+                                <div style="width:100%">
+                                    <div style="float:left;">
+                                        <i class="material-icons green-text">check_box_outline_blank</i> Deadline?
+                                    </div>
+                                    <div style="clear:both;"></div>
+                                </div>
+                            </div>
+                            <div class="collapsible-body row">
+                                <div class="input-field col s12">
+                                    <input id="date" type="text">
+                                    <label for="date">Date</label>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li id="li-wrap">
+                            <div class="collapsible-header">
+                                <div style="width:100%">
+                                    <div style="float:left;">
+                                        <i class="material-icons pink-text">check_box_outline_blank</i> Gift Wrapping
+                                    </div>
+                                    <div style="float:right;">Rs. 15</div>
+                                    <div style="clear:both;"></div>
+                                </div>
+                            </div>
+                            <div class="collapsible-body row">
+                                <p>To add that extra sparkle!</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="carousel-item">
+                    <h2>Contact Details</h2>
+                    <div class="row">
+                        <div class="row col l8 offset-l2 m12 s12" style="padding:12px;">
+                            <div class="input-field col m6 offset-m3 s12">
+                                <input id="first_name" type="text" class="validate">
+                                <label for="first_name">Name</label>
+                            </div>
+                            <div class="input-field col m6 offset-m3 s12">
+                                <input placeholder="Email/Phone" id="contact" type="text" class="validate">
+                                <label for="contact">Contact</label>
+                            </div>
+                            <div class="col s12">
+                                <h6>How would you like us to contact you?</h6>
+                                <span>
+                                    <input name="group1" class="with-gap blue-text" type="radio" id="email" />
+                                    <label for="email">E-mail</label>
+                                </span>
+                                <span>
+                                    <input name="group1" class="with-gap" type="radio" id="call" checked />
+                                    <label for="call">Call</label>
+                                </span>
+                                <span>
+                                    <input name="group1" class="with-gap" type="radio" id="whatsapp" />
+                                    <label for="whatsapp">Whatsapp</label>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <h2>Almost done!</h2>
+                    <div class="row">
+                        <h6 class="col l8 offset-l2 m10 offset-m1 s12" style="font-size:large">
+                            Expect a further direct correspondance from us, for the exact pricing and delivery location.<br><br>                            All orders come withing the original artwork created by the artist.<br><br> Thank you! Now you
+                            can confirm the order.&ensp;<i class="material-icons pink-text">favorite</i>
+                        </h6>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+        <div class="col s12" style="text-align:center">
+            <span class="dot dotactive"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+
+
+
+    <div class="row">
+
+        <div class="col m10 offset-m1">
+
+            <h5 style="margin:24px; margin-top:36px; color:rgba(0, 0, 0, 0.8)">Check out our previous works...</h5>
+
+            <div class="row">
+
+
+                <div class="col s12 m6 l3">
+
+                    <div class="card z-depth-3">
+                        <div class="card-image">
+                            <img class="materialboxed" data-caption="Pencil Sketch by Vishal Raj A" src="avr3.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Pencil Sketch</span>
+                            <p>Vishal Raj A</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col s12 m6 l3">
+
+                    <div class="card z-depth-3">
+                        <div class="card-image">
+                            <img class="materialboxed" data-caption="Pencil Sketch by Vishal Raj A" src="avr2.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Pencil Sketch</span>
+                            <p>Vishal Raj A</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="col s12 m12 l6">
+
+                    <div class="card z-depth-3">
+                        <div class="card-image">
+                            <img class="materialboxed" data-caption="Coal Art by Sujitha A" src="preview.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Coal Art (Reworked)</span>
+                            <p>Sujitha A</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+
+
+                <div class="col s12 m12 l6">
+
+                    <div class="card z-depth-3">
+                        <div class="card-image">
+                            <img class="materialboxed" data-caption="Pencil Sketch by Vishal Raj A" src="avr4.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Pencil Sketch</span>
+                            <p>Vishal Raj A</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="col s12 m6 l3">
+
+                    <div class="card z-depth-3">
+                        <div class="card-image">
+                            <img class="materialboxed" data-caption="Pencil Sketch by Vishal Raj A" src="avr1.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Pencil Sketch</span>
+                            <p>Vishal Raj A</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="col s12 m6 l3">
+
+                    <div class="card z-depth-3">
+                        <div class="card-image">
+                            <img class="materialboxed" data-caption="Pencil Sketch by Vishal Raj A" src="avr6.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Pencil Sketch</span>
+                            <p>Vishal Raj A</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col s12 m6 l3">
+
+                    <div class="card z-depth-3">
+                        <div class="card-image">
+                            <img class="materialboxed" data-caption="Pencil Sketch by Sujitha A" src="suji3.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Pencil Sketch</span>
+                            <p>Vishal Raj A</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col s12 m6 l3">
+
+                    <div class="card z-depth-3">
+                        <div class="card-image">
+                            <img class="materialboxed" data-caption="Colour Sketch by Sujitha A" src="suji2.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Colour Sketch</span>
+                            <p>Sujitha A</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col s12 m12 l6">
+
+                    <div class="card z-depth-3">
+                        <div class="card-image">
+                            <img class="materialboxed" data-caption="Coal Art by Sujitha A" src="suji5.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Coal Art</span>
+                            <p>Sujitha A</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4 id="modal_title" style="font-size:x-large">Confirming order...</h4>
+            <br>
+            <div class="progress cyan lighten-5">
+                <div id="progress_bar" class="determinate cyan" style="width: 0%"></div>
+            </div>
+
+        </div>
+        <div class="modal-footer">
+            <a href="#!" id="ok_btn" class="modal-action modal-close waves-effect btn-flat" disabled>ok</a>
+        </div>
+    </div>
+
+    <footer class="page-footer blue">
+        <div class="container" style="padding-bottom:16px;">
+            From the team of <a class="white-text text-lighten-3" href="contact.html">CANDiD</a>
+        </div>
+    </footer>
+
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyBDCr-B3A8USVuwsEQ1zMrdIfsrmMXQzEg",
+        authDomain: "thunderbolt-shop.firebaseapp.com",
+        databaseURL: "https://thunderbolt-shop.firebaseio.com",
+        projectId: "thunderbolt-shop",
+        storageBucket: "thunderbolt-shop.appspot.com",
+        messagingSenderId: "292348819143"
+    };
+    firebase.initializeApp(config);
+
+</script>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+<script>
+    $(".button-collapse").sideNav();
+
+    var currentStage = 1;
+    var noOfStages = 6;
+
+    var chosenProducts = [];
+
+    var dots = document.getElementsByClassName("dot");
+
+    $(document).ready(function () {
+        $('.parallax').parallax();
+        $('.products').carousel();
+        $('.modal').modal();
+        $('.materialboxed').materialbox();
+
+        var carousel = $('.stages').carousel({ fullWidth: true, noWrap: true, duration:50 });
+        //Disable all swipping on carousel
+        if (typeof window.ontouchstart !== 'undefined') {
+            carousel.off('touchstart.carousel');
+        }
+        carousel.off('mousedown.carousel');
+
+        carousel = $('.products').carousel();
+        //Disable all swipping on carousel
+        if (typeof window.ontouchstart !== 'undefined') {
+            carousel.off('touchstart.carousel');
+        }
+        carousel.off('mousedown.carousel');
+
+        $('.collapsible').collapsible({
+            onOpen: function (el) {
+                el[0].children[0].children[0].children[0].children[0].innerHTML = "check_box";
+                chosenProducts.push(el[0].id);
+            },
+            onClose: function (el) {
+                el[0].children[0].children[0].children[0].children[0].innerHTML = "check_box_outline_blank";
+                chosenProducts.pop(el[0].id);
+            }
+        });
+
+        repeat();
+    });
+
+    function repeat() {
+        setTimeout(() => { $('.products').carousel('next'); repeat(); }, 1500)
+    }
+
+    function next() {
+        if (currentStage == noOfStages) {
+            submit();
+            return;
+        }
+        $('.stages').carousel('next');
+        currentStage++;
+        if (currentStage == noOfStages) {
+            document.getElementById('nexttxt').innerHTML = "submit";
+        }
+        document.getElementById('prevbtn').classList.remove('disabled');
+
+        updateDots();
+    }
+
+    function prev() {
+        $('.stages').carousel('prev');
+        if (currentStage == noOfStages) {
+            document.getElementById('nexttxt').innerHTML = "next";
+        }
+        currentStage--;
+        if (currentStage == 1) {
+            document.getElementById('prevbtn').classList.add('disabled');
+        }
+
+        updateDots();
+    }
+
+    function updateDots() {
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" dotactive", "");
+        }
+        dots[currentStage - 1].className += " dotactive";
+    }
+
+    function submit() {
+        console.log('submit');
+
+        var ideas = $('#ideas').val().trim();
+
+        if (!ideas) {
+            Materialize.toast('You haven\'t shared your ideas yet...', 2000, 'rounded');
+            $('.stages').carousel('set', 1);
+            document.getElementById('nexttxt').innerHTML = "next";
+            currentStage = 2;
+            updateDots();
+            $('#ideas').focus();
+            return;
+        }
+
+        if (!(chosenProducts.filter(item => item != 'li-deadline' && item != 'li-wrap')).length) {
+            Materialize.toast('You haven\'t chose any products yet...', 2000, 'rounded');
+            $('.stages').carousel('set', 2);
+            document.getElementById('nexttxt').innerHTML = "next";
+            currentStage = 3;
+            updateDots();
+            return;
+        }
+
+        var first_name = $("#first_name").val().trim();
+        var contact = $("#contact").val().trim();
+
+        if (!(first_name && contact)) {
+            Materialize.toast('You haven\'t provided sufficient contact information...', 2000, 'rounded');
+            $('.stages').carousel('set', 4);
+            document.getElementById('nexttxt').innerHTML = "next";
+            currentStage = 5;
+            updateDots();
+            return;
+        }
+
+        var finalObject = {
+            name: first_name,
+            contact: contact,
+            ideas: $("#ideas").val(),
+            contact_medium: ($("#email").is(":checked") ? "email" : ($("#call").is(":checked") ? "call" : "whatsapp")),
+            orders: chosenProducts,
+            parameters: {
+                poster: $("#poster").val(),
+                poster_qty: $("#posterq").val(),
+                framed: $("#framed").val(),
+                greeting: $("#greeting").val(),
+                greeting_color: $("#greetingc").val(),
+                greeting_qty: $("#greetingq").val(),
+                calendar: $("#calendar").val(),
+                tee: $("#tee").val(),
+                mug: $("#mug").val(),
+                case: $("#case").val(),
+                custom: $("#custom").val(),
+                deadline: $("#date").val(),
+            }
+        };
+
+        console.log(finalObject);
+
+        $("#ok_btn").attr("disabled", "disabled");
+        $("#modal_title").html("Confirming order");
+        $("#progress_bar").css("width", "0%");
+        $('#modal1').modal('open');
+
+        firebase.database().ref("orders/").push(finalObject).then(
+
+            e => {
+
+                var file = document.querySelector('input[type=file]').files[0];
+
+                if (file) {
+
+                    $("#modal_title").html("Uploading image");
+
+                    firebase.storage().ref("images/" + e.key).put(file).on('state_changed',
+                        snapshot => $("#progress_bar").css("width", ((snapshot.bytesTransferred / snapshot.totalBytes) * 100) + "%"),
+                        err => {
+                            $("#modal_title").html("Oops, something went wrong, try again")
+                            $("#ok_btn").removeAttr("disabled");
+                        },
+                        function () {
+                            $("#modal_title").html("Order confirmed!");
+                            $("#ok_btn").removeAttr("disabled");
+                        });
+
+                } else {
+                    $("#modal_title").html("Order confirmed!");
+                    $("#progress_bar").css("width", "100%");
+                    $("#ok_btn").removeAttr("disabled");
+                }
+
+            }
+
+        ).catch(err => {
+            $("#modal_title").html("Oops, something went wrong, try again");
+            $("#ok_btn").removeAttr("disabled");
+        });
+
+
+        if (file) {
+
+            firebase.storage().ref("images/" + file.name).put(file).on('state_changed',
+                snapshot => $("#progress_bar").css("width", ((snapshot.bytesTransferred / snapshot.totalBytes) * 100) + "%"),
+                error => console.log(error));
+
+        }
+
+    }
+
+</script>
+
+</html>

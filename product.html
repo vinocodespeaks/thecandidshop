@@ -1,0 +1,164 @@
+<html>
+    <head>
+
+        <meta charset="utf-8">
+
+        <title>Thunderbolt</title>
+
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+        <style>
+        
+            .brand-logo {
+                font-family: 'Amatic SC', sans-serif;
+            }
+
+            nav {
+                padding-left: 32px;
+                padding-right: 32px
+            }
+
+            a, h5, h6, h4, body {
+                font-family: 'Open Sans', sans-serif;
+            }
+
+            .parallax-container {
+                height: 240px;
+            }
+
+            .parallax-container {
+                min-height: 380px;
+                line-height: 0;
+                height: auto;
+                color: rgba(255,255,255,.9);
+            }
+            .parallax-container .section {
+                width: 100%;
+            }
+
+            @media only screen and (max-width : 992px) {
+                .parallax-container .section {
+                    position: absolute;
+                    top: 40%;
+                }
+                #index-banner .section {
+                    top: 10%;
+                }
+            }
+
+
+            @media only screen and (max-width : 600px) {
+                #index-banner .section {
+                    top: 0;
+                }
+            }
+
+            .icon-block {
+                padding: 0 15px;
+            }
+
+            .icon-block .material-icons {
+                font-size: inherit;
+            }
+
+            .card {
+                margin-left: 0px;
+                margin-right: 0px;
+                margin-top: 12px;
+                margin-bottom: 12px;
+            }
+
+        
+        </style>
+
+    </head>
+
+    <body>
+
+        <div class="navbar-fixed">
+
+            <nav class="white">
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo black-text">Thunderbolt Shop</a>
+                    <a href="#" data-activates="mobile-demo" class="button-collapse black-text"><i class="material-icons">menu</i></a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a class="black-text">Crafts</a></li>
+                        <li><a class="black-text">Arts</a></li>
+                        <li><a class="black-text">Posters</a></li>
+                        <li><a class="black-text">Contact Us</a></li>
+                    </ul>
+                </div>
+            </nav>   
+        
+        </div>
+
+        
+        <ul class="side-nav" id="mobile-demo">
+            <img src="background1.png" width="300px" style="margin-bottom:24px">
+            <li><a class="black-text">Crafts</a></li>
+            <li><a class="black-text">Arts</a></li>
+            <li><a class="black-text">Posters</a></li>
+            <li><a class="black-text">Contact Us</a></li>
+        </ul>
+        
+        <div class="row" style="padding-top:32px;">
+
+            <div class="col l1"></div>
+
+            <div class="col l4">
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="preview.jpg">
+                    </div>
+                </div>
+
+            </div> 
+            
+            <div class="col l1"></div>
+
+            <div class="col l5" style="height:fit-content">
+                <h4>Hello</h4>
+                <span>Hello pello bellow mellow lorem ipsum dolor met mdisk bare noise less noize<br>This is a very nice product, please buy this product<br>
+
+                <bl>
+                    <li>User friendly</li>
+                    <li>Helpful</li>
+                </bl>
+
+            </span>
+            </div>
+        
+            <div class="col l1"></div>
+
+        </div>
+        
+        <footer class="page-footer blue">
+            <div class="container" style="padding-bottom:16px;">
+                From the team of <a class="white-text text-lighten-3" href="http://materializecss.com">CANDiD</a>
+            </div>
+        </footer>        
+        
+    </body>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <script>
+
+        $(".button-collapse").sideNav();
+
+        $(document).ready(function(){
+            $('.parallax').parallax();
+        });
+
+    </script>
+
+</html>
